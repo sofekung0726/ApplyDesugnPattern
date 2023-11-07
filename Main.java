@@ -1,22 +1,15 @@
-class Main {
-  public static void main(String[] args) {
-    HolyBasil dish1 = new HolyBasil.HolyBasilBuilder("Pork")
-    .fishSauce("นิดเดียว")
-    .garlic("เยอะๆ")
-    .chili("ไม่พริก")
-    .build();
- 
-    System.out.println(dish1);
- 
-    HolyBasil dish2 = new HolyBasil.HolyBasilBuilder("Chicken")
-    .chili("ขอเผ็ดๆ")
-    .build();
- 
-    System.out.println(dish2);
- 
-    HolyBasil dish3 = new HolyBasil.HolyBasilBuilder("Shimp")
-    .build();
- 
-    System.out.println(dish3);
-}
+public class Main {
+    public static void main(String[] args) {
+        HolyBasil holyBasil1 = new HolyBasilBuilder("Pork")
+                .fishSauce("Soy Sauce")
+                .garlic("Lots of Garlic")
+                .chili("Spicy")
+                .build();
+
+        System.out.println(holyBasil1);
+        System.out.println("Meat: " + holyBasil1.getMeat());
+        System.out.println("Fish Sauce: " + holyBasil1.getFishSauce());
+        System.out.println("Garlic: " + holyBasil1.getGarlic());
+        System.out.println("Chili: " + holyBasil1.getChili());
+    }
 }

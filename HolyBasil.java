@@ -1,30 +1,35 @@
-public class HolyBasil
-{
-   private final String meat; // จำเป็นต้องใส่
-   private final String fishSauce; // ไม่จำเป็น
-   private final String garlic; // ไม่จำเป็น
-   private final String chili; // ไม่จำเป็น
-   private HolyBasil(HolyBasilBuilder builder) {
-       this.meat = builder.meat;
-       this.fishSauce = builder.fishSauce;
-       this.garlic = builder.garlic;
-       this.chili = builder.chili;
+public class HolyBasil {
+   private final String meat;
+   private final String fishSauce;
+   private final String garlic;
+   private final String chili;
+
+   HolyBasil(String meat, String fishSauce, String garlic, String chili) {
+       this.meat = meat;
+       this.fishSauce = fishSauce;
+       this.garlic = garlic;
+       this.chili = chili;
    }
-   //ต้องมี getter แต่ไม่ต้องมี setter
+
    public String getMeat() {
        return meat;
    }
-   public String getfishSauce() {
+
+   public String getFishSauce() {
        return fishSauce;
    }
-   public String getgarlic() {
+
+   public String getGarlic() {
        return garlic;
    }
-   public String getchili() {
+
+   public String getChili() {
        return chili;
    }
+
    @Override
    public String toString() {
        String order = "HolyBasil "+this.meat + ", fishSauce:"+this.fishSauce+", garlic:"+this.garlic+", chili:"+this.chili;
        return order;
    }
+}
