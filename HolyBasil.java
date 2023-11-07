@@ -4,7 +4,7 @@ public class HolyBasil {
    private final String garlic;
    private final String chili;
 
-   HolyBasil(String meat, String fishSauce, String garlic, String chili) {
+   public HolyBasil(String meat, String fishSauce, String garlic, String chili) {
        this.meat = meat;
        this.fishSauce = fishSauce;
        this.garlic = garlic;
